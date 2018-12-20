@@ -48,3 +48,6 @@ Route::group(['prefix' => 'member', 'middleware' => ['auth','role:member']], fun
 });
 Auth::routes();
 // Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

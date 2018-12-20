@@ -10,6 +10,7 @@ class UserRole extends Model
 	protected $fillable = [
 		'role_name', 'created_at', 'updated_at'
 	];
+    protected $table = "role_user";
     	/*
     	* Method untuk yang mendefinisikan relasi antara model user dan model Role
     	*/ 
